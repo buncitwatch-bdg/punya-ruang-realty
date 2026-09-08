@@ -1,3 +1,12 @@
+# Punya Ruang Realty - Official Property & Investment Partner
+
+Website resmi dan katalog properti **Punya Ruang Realty** yang dibangun menggunakan framework **Astro** dan **Tailwind CSS**[cite: 3, 4].
+
+- **Live Preview / Development:** `npm run dev` (berjalan di `localhost:4321`)[cite: 1, 3]
+- **Deployment Production:** `npm run build`[cite: 1, 3]
+
+---
+
 # Astro Starter Kit: Minimal
 
 ```sh
