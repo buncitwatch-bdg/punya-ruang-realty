@@ -1,0 +1,504 @@
+---
+import '../styles/global.css';
+---
+
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Properti Bogor | Punya Ruang Realty</title>
+
+    <!-- Google Fonts: Montserrat (Heading) & Open Sans (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body { 
+            font-family: 'Open Sans', sans-serif; 
+            background-color: #F4F4F4; 
+            color: #333333; 
+        }
+        h1, h2, h3, h4, h5, h6, .font-heading { 
+            font-family: 'Montserrat', sans-serif; 
+        }
+        .header-bg {
+            background-image: linear-gradient(rgba(34, 34, 34, 0.88), rgba(34, 34, 34, 0.88)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-gold selection:text-charcoal">
+
+    <!-- Header / Navbar (Royal Gold Style) -->
+    <nav class="fixed w-full bg-charcoal border-b-4 border-gold z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Brand Logo & Name -->
+                <a href="index.html" class="flex items-center gap-3.5 group">
+                    <img src="assets/logo.svg" alt="Punya Ruang Realty Logo" class="w-10 h-10 md:w-12 md:h-12 object-contain transition-transform group-hover:scale-105" onerror="this.src='https://via.placeholder.com/48/D4AF37/222222?text=PRR'">
+                    <div>
+                        <span class="font-heading font-black text-lg md:text-xl text-white uppercase tracking-wider block leading-tight">PUNYA RUANG</span>
+                        <span class="font-heading font-bold text-xs md:text-sm text-gold uppercase tracking-widest block">REALTY</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html#beranda" class="font-heading font-bold text-xs text-gray-300 hover:text-gold uppercase tracking-widest transition-colors">Beranda</a>
+                    <a href="index.html#area-layanan" class="font-heading font-bold text-xs text-gold uppercase tracking-widest transition-colors">Area Layanan</a>
+                    <a href="index.html#jenis-properti" class="font-heading font-bold text-xs text-gray-300 hover:text-gold uppercase tracking-widest transition-colors">Jenis Properti</a>
+                    <a href="index.html#kontak" class="font-heading font-bold text-xs text-gray-300 hover:text-gold uppercase tracking-widest transition-colors">Kontak</a>
+                </div>
+
+                <!-- Desktop CTA Button -->
+                <a href="https://wa.me/6281224866614?text=Halo%20Aditya,%20saya%20tertarik%20dengan%20katalog%20properti%20di%20Bogor." target="_blank" class="hidden md:inline-flex items-center gap-2 bg-gold hover:bg-gold-hover text-charcoal font-heading font-extrabold text-xs px-6 py-3 uppercase tracking-wider transition-all shadow-md hover:shadow-gold/20">
+                    <i class="fab fa-whatsapp text-lg"></i>
+                    KONSULTASI BOGOR
+                </a>
+
+                <!-- Mobile Action Button -->
+                <div class="md:hidden flex items-center">
+                    <a href="https://wa.me/6281224866614?text=Halo%20Aditya,%20saya%20tertarik%20dengan%20katalog%20properti%20di%20Bogor." target="_blank" class="inline-flex items-center gap-1.5 bg-gold text-charcoal font-heading font-extrabold text-[11px] px-3.5 py-2 uppercase tracking-wider shadow-md">
+                        <i class="fab fa-whatsapp text-base"></i>
+                        WA
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Banner Area -->
+    <section class="pt-28 pb-16 header-bg text-white border-b-2 border-gold relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Breadcrumb Navigation -->
+            <nav class="flex items-center gap-2 text-xs font-heading font-semibold text-gray-300 uppercase mb-4">
+                <a href="../index.html" class="hover:text-gold transition-colors">Beranda</a>
+                <i class="fas fa-chevron-right text-[10px] text-gold"></i>
+                <a href="../index.html#area-layanan" class="hover:text-gold transition-colors">Area Layanan</a>
+                <i class="fas fa-chevron-right text-[10px] text-gold"></i>
+                <span class="text-gold">Bogor</span>
+            </nav>
+
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
+                <div>
+                    <span class="font-heading font-extrabold text-charcoal bg-gold px-3.5 py-1 uppercase text-xs tracking-wider inline-block mb-3 shadow-sm">
+                        KATALOG WILAYAH BOGOR
+                    </span>
+                    <h1 class="font-heading font-black text-3xl sm:text-4xl md:text-5xl text-white uppercase tracking-tight leading-none mb-3">
+                        HUNIAN & PROPERTI INVESTASI BOGOR
+                    </h1>
+                    <p class="font-body text-gray-300 text-sm md:text-base max-w-2xl leading-relaxed">
+                        Pilihan rumah tinggal, villa, townhouse eksklusif, dan kavling potensial di area strategis Kota & Kabupaten Bogor.
+                    </p>
+                </div>
+                <div class="bg-charcoal/90 border border-gold/40 p-4 rounded-none text-left md:text-right shrink-0">
+                    <span class="font-heading font-bold text-xs text-gold uppercase tracking-wider block mb-1">TOTAL LISTING TERSEDIA</span>
+                    <span class="font-heading font-black text-2xl text-white">4 PROPERTI UNGGULAN</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Filter & Sorting Bar -->
+    <section class="bg-white border-b border-borderCustom sticky top-20 z-40 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="flex flex-wrap items-center gap-3 w-full md:w-auto">
+                    <span class="font-heading font-bold text-xs text-charcoal uppercase tracking-wider hidden lg:inline-block">FILTER:</span>
+                    <select class="bg-neutralLight border border-borderCustom text-charcoal font-body text-xs px-3.5 py-2 focus:outline-none focus:border-gold">
+                        <option>Semua Tipe Properti</option>
+                        <option>Rumah Hunian</option>
+                        <option>Townhouse / Cluster</option>
+                        <option>Villa / Resort</option>
+                    </select>
+                    <select class="bg-neutralLight border border-borderCustom text-charcoal font-body text-xs px-3.5 py-2 focus:outline-none focus:border-gold">
+                        <option>Semua Kisaran Harga</option>
+                        <option>&lt; Rp 1 Milyar</option>
+                        <option>Rp 1 Milyar - Rp 2 Milyar</option>
+                        <option>&gt; Rp 2 Milyar</option>
+                    </select>
+                </div>
+                <div class="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
+                    <span class="font-heading font-bold text-xs text-gray-500 uppercase">Menampilkan 4 dari 4 Unit</span>
+                    <a href="https://wa.me/6281224866614?text=Halo%20Aditya,%20saya%20mencari%20kriteria%20properti%20khusus%20di%20Bogor." target="_blank" class="font-heading font-extrabold text-xs text-gold hover:text-gold-hover uppercase tracking-wider underline">
+                        Request Kriteria Khusus &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Grid Listing Bogor (4 Properti) -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- RUMAH BOGOR 1 -->
+                <div class="bg-white border-t-4 border-gold border-x border-b border-borderCustom hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <!-- Image Container -->
+                        <div class="relative overflow-hidden bg-charcoal h-52">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Bogor Heritage Residence" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-90">
+                            <span class="absolute top-3 left-3 bg-gold text-charcoal font-heading font-extrabold text-[10px] px-2.5 py-1 uppercase tracking-wider shadow-md">
+                                DIJUAL SIAP HUNI
+                            </span>
+                            <span class="absolute bottom-3 right-3 bg-charcoal/90 text-white font-heading font-bold text-[10px] px-2 py-0.5 uppercase tracking-wider border border-gold">
+                                ID: BGR-001
+                            </span>
+                        </div>
+
+                        <!-- Content Details -->
+                        <div class="p-6">
+                            <div class="flex items-center gap-1.5 text-xs text-gray-500 font-body mb-2">
+                                <i class="fas fa-map-marker-alt text-gold"></i>
+                                <span>Tanah Sareal, Kota Bogor</span>
+                            </div>
+                            <h3 class="font-heading font-extrabold text-lg text-charcoal uppercase mb-2 leading-snug group-hover:text-gold transition-colors">
+                                BOGOR HERITAGE RESIDENCE
+                            </h3>
+                            <p class="font-heading font-black text-xl text-gold uppercase mb-4">
+                                RP 850.000.000
+                            </p>
+                            
+                            <!-- Key Specs Grid -->
+                            <div class="grid grid-cols-2 gap-2 pt-3 border-t border-borderCustom text-xs text-slateCustom font-body mb-4">
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-bed text-gold"></i>
+                                    <span>3 K. Tidur</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-bath text-gold"></i>
+                                    <span>2 K. Mandi</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-ruler-combined text-gold"></i>
+                                    <span>LB: 72 m²</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-vector-square text-gold"></i>
+                                    <span>LT: 90 m²</span>
+                                </div>
+                            </div>
+                            
+                            <p class="font-body text-xs text-gray-600 line-clamp-2 mb-4 leading-relaxed">
+                                Townhouse minimalis modern 2 lantai. Akses 10 menit ke Tol Kayumanis & Stasiun KRL Bogor.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="p-6 pt-0 space-y-2">
+                        <a href="bogor1.html" class="block text-center bg-charcoal hover:bg-charcoal-light text-white font-heading font-bold text-xs py-3 uppercase tracking-wider transition-colors border border-charcoal">
+                            LIHAT DETAIL PROPERTI
+                        </a>
+                        <a href="https://wa.me/6281224866614?text=Halo%20Aditya,%20saya%20tertarik%20dengan%20Bogor%20Heritage%20Residence%20(Rp%20850jt)." target="_blank" class="block text-center bg-gold hover:bg-gold-hover text-charcoal font-heading font-extrabold text-xs py-2.5 uppercase tracking-wider transition-colors">
+                            <i class="fab fa-whatsapp text-sm mr-1"></i> TANYA ADITYA VIA WA
+                        </a>
+                    </div>
+                </div>
+
+                <!-- RUMAH BOGOR 2 -->
+                <div class="bg-white border-t-4 border-gold border-x border-b border-borderCustom hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <!-- Image Container -->
+                        <div class="relative overflow-hidden bg-charcoal h-52">
+                            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80" alt="Green Hill Villa Bogor" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-90">
+                            <span class="absolute top-3 left-3 bg-gold text-charcoal font-heading font-extrabold text-[10px] px-2.5 py-1 uppercase tracking-wider shadow-md">
+                                VILLA SEJUK
+                            </span>
+                            <span class="absolute bottom-3 right-3 bg-charcoal/90 text-white font-heading font-bold text-[10px] px-2 py-0.5 uppercase tracking-wider border border-gold">
+                                ID: BGR-002
+                            </span>
+                        </div>
+
+                        <!-- Content Details -->
+                        <div class="p-6">
+                            <div class="flex items-center gap-1.5 text-xs text-gray-500 font-body mb-2">
+                                <i class="fas fa-map-marker-alt text-gold"></i>
+                                <span>Ciawi, Kab. Bogor</span>
+                            </div>
+                            <h3 class="font-heading font-extrabold text-lg text-charcoal uppercase mb-2 leading-snug group-hover:text-gold transition-colors">
+                                GREEN HILL VILLA BOGOR
+                            </h3>
+                            <p class="font-heading font-black text-xl text-gold uppercase mb-4">
+                                RP 1.250.000.000
+                            </p>
+                            
+                            <!-- Key Specs Grid -->
+                            <div class="grid grid-cols-2 gap-2 pt-3 border-t border-borderCustom text-xs text-slateCustom font-body mb-4">
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-bed text-gold"></i>
+                                    <span>4 K. Tidur</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-bath text-gold"></i>
+                                    <span>3 K. Mandi</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-ruler-combined text-gold"></i>
+                                    <span>LB: 110 m²</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-vector-square text-gold"></i>
+                                    <span>LT: 120 m²</span>
+                                </div>
+                            </div>
+                            
+                            <p class="font-body text-xs text-gray-600 line-clamp-2 mb-4 leading-relaxed">
+                                Villa bernuansa alam sejuk dengan view Gunung Salak. Cocok untuk hunian peristirahatan & sewa harian.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="p-6 pt-0 space-y-2">
+                        <a href="bogor2.html" class="block text-center bg-charcoal hover:bg-charcoal-light text-white font-heading font-bold text-xs py-3 uppercase tracking-wider transition-colors border border-charcoal">
+                            LIHAT DETAIL PROPERTI
+                        </a>
+                        <a href="https://wa.me/6281224866614?text=Halo%20Aditya,%20saya%20tertarik%20dengan%20Green%20Hill%20Villa%20Bogor%20(Rp%201.25M)." target="_blank" class="block text-center bg-gold hover:bg-gold-hover text-charcoal font-heading font-extrabold text-xs py-2.5 uppercase tracking-wider transition-colors">
+                            <i class="fab fa-whatsapp text-sm mr-1"></i> TANYA ADITYA VIA WA
+                        </a>
+                    </div>
+                </div>
+
+                <!-- RUMAH BOGOR 3 -->
+                <div class="bg-white border-t-4 border-gold border-x border-b border-borderCustom hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <!-- Image Container -->
+                        <div class="relative overflow-hidden bg-charcoal h-52">
+                            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=80" alt="Pajajaran Smart House" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-90">
+                            <span class="absolute top-3 left-3 bg-gold text-charcoal font-heading font-extrabold text-[10px] px-2.5 py-1 uppercase tracking-wider shadow-md">
+                                SMART HOME
+                            </span>
+                            <span class="absolute bottom-3 right-3 bg-charcoal/90 text-white font-heading font-bold text-[10px] px-2 py-0.5 uppercase tracking-wider border border-gold">
+                                ID: BGR-003
+                            </span>
+                        </div>
+
+                        <!-- Content Details -->
+                        <div class="p-6">
+                            <div class="flex items-center gap-1.5 text-xs text-gray-500 font-body mb-2">
+                                <i class="fas fa-map-marker-alt text-gold"></i>
+                                <span>Bogor Timur, Kota Bogor</span>
+                            </div>
+                            <h3 class="font-heading font-extrabold text-lg text-charcoal uppercase mb-2 leading-snug group-hover:text-gold transition-colors">
+                                PAJAJARAN SMART HOUSE
+                            </h3>
+                            <p class="font-heading font-black text-xl text-gold uppercase mb-4">
+                                RP 980.000.000
+                            </p>
+                            
+                            <!-- Key Specs Grid -->
+                            <div class="grid grid-cols-2 gap-2 pt-3 border-t border-borderCustom text-xs text-slateCustom font-body mb-4">
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-bed text-gold"></i>
+                                    <span>3 K. Tidur</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-bath text-gold"></i>
+                                    <span>2 K. Mandi</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-ruler-combined text-gold"></i>
+                                    <span>LB: 85 m²</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-vector-square text-gold"></i>
+                                    <span>LT: 96 m²</span>
+                                </div>
+                            </div>
+                            
+                            <p class="font-body text-xs text-gray-600 line-clamp-2 mb-4 leading-relaxed">
+                                Hunian modern lengkap dengan sistem Smart Lock & Solar Panel. Pusat kota dekat Botanical Garden.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="p-6 pt-0 space-y-2">
+                        <a href="bogor3.html" class="block text-center bg-charcoal hover:bg-charcoal-light text-white font-heading font-bold text-xs py-3 uppercase tracking-wider transition-colors border border-charcoal">
+                            LIHAT DETAIL PROPERTI
+                        </a>
+                        <a href="https://wa.me/6281224866614?text=Halo%20Aditya,%20saya%20tertarik%20dengan%20Pajajaran%20Smart%20House%20(Rp%20980jt)." target="_blank" class="block text-center bg-gold hover:bg-gold-hover text-charcoal font-heading font-extrabold text-xs py-2.5 uppercase tracking-wider transition-colors">
+                            <i class="fab fa-whatsapp text-sm mr-1"></i> TANYA ADITYA VIA WA
+                        </a>
+                    </div>
+                </div>
+
+                <!-- RUMAH BOGOR 4 -->
+                <div class="bg-white border-t-4 border-gold border-x border-b border-borderCustom hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <!-- Image Container -->
+                        <div class="relative overflow-hidden bg-charcoal h-52">
+                            <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=600&q=80" alt="Sentul View Cluster" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-90">
+                            <span class="absolute top-3 left-3 bg-gold text-charcoal font-heading font-extrabold text-[10px] px-2.5 py-1 uppercase tracking-wider shadow-md">
+                                EKSKLUSIF SENTUL
+                            </span>
+                            <span class="absolute bottom-3 right-3 bg-charcoal/90 text-white font-heading font-bold text-[10px] px-2 py-0.5 uppercase tracking-wider border border-gold">
+                                ID: BGR-004
+                            </span>
+                        </div>
+
+                        <!-- Content Details -->
+                        <div class="p-6">
+                            <div class="flex items-center gap-1.5 text-xs text-gray-500 font-body mb-2">
+                                <i class="fas fa-map-marker-alt text-gold"></i>
+                                <span>Babakan Madang, Sentul</span>
+                            </div>
+                            <h3 class="font-heading font-extrabold text-lg text-charcoal uppercase mb-2 leading-snug group-hover:text-gold transition-colors">
+                                SENTUL VIEW CLUSTER
+                            </h3>
+                            <p class="font-heading font-black text-xl text-gold uppercase mb-4">
+                                RP 1.600.000.000
+                            </p>
+                            
+                            <!-- Key Specs Grid -->
+                            <div class="grid grid-cols-2 gap-2 pt-3 border-t border-borderCustom text-xs text-slateCustom font-body mb-4">
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-bed text-gold"></i>
+                                    <span>4 K. Tidur</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-bath text-gold"></i>
+                                    <span>3 K. Mandi</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-ruler-combined text-gold"></i>
+                                    <span>LB: 130 m²</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-vector-square text-gold"></i>
+                                    <span>LT: 140 m²</span>
+                                </div>
+                            </div>
+                            
+                            <p class="font-body text-xs text-gray-600 line-clamp-2 mb-4 leading-relaxed">
+                                Rumah mewah di kawasan mandiri Sentul City. Akses Tol Jagorawi langsung, dekat AEON Mall & Sentul International Convention.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="p-6 pt-0 space-y-2">
+                        <a href="bogor4.html" class="block text-center bg-charcoal hover:bg-charcoal-light text-white font-heading font-bold text-xs py-3 uppercase tracking-wider transition-colors border border-charcoal">
+                            LIHAT DETAIL PROPERTI
+                        </a>
+                        <a href="https://wa.me/6281224866614?text=Halo%20Aditya,%20saya%20tertarik%20dengan%20Sentul%20View%20Cluster%20(Rp%201.6M)." target="_blank" class="block text-center bg-gold hover:bg-gold-hover text-charcoal font-heading font-extrabold text-xs py-2.5 uppercase tracking-wider transition-colors">
+                            <i class="fab fa-whatsapp text-sm mr-1"></i> TANYA ADITYA VIA WA
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Banner Section -->
+    <section class="py-16 bg-charcoal text-white border-y-4 border-gold">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <span class="font-heading font-extrabold text-charcoal bg-gold px-3.5 py-1 uppercase text-xs tracking-wider inline-block mb-4 shadow-sm">
+                LAYANAN SURVEY & KONSULTASI LOKASI BOGOR
+            </span>
+            <h2 class="font-heading font-black text-2xl md:text-4xl text-white uppercase mb-4">
+                INGIN SURVEY LOKASI ATAU CARI KAVLING/RUKO LAIN DI BOGOR?
+            </h2>
+            <p class="font-body text-gray-300 text-sm md:text-base max-w-2xl mx-auto mb-8 leading-relaxed">
+                Tim Punya Ruang Realty siap mengantar survey ke lokasi dan menyediakan rekomendasi database listing tertutup (off-market) di kawasan Bogor.
+            </p>
+            <a href="https://wa.me/6281224866614?text=Halo%20Aditya,%20saya%20ingin%20jadwal%20survey%20lokasi%20atau%20konsultasi%20listing%20Bogor." target="_blank" class="inline-flex items-center gap-3 bg-gold hover:bg-gold-hover text-charcoal font-heading font-black text-sm px-8 py-4 uppercase tracking-wider transition-all shadow-xl hover:scale-105">
+                <i class="fab fa-whatsapp text-xl"></i>
+                JADWALKAN SURVEY SEKARANG (ADITYA)
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer (Royal Gold Style) -->
+    <footer id="kontak" class="bg-charcoal text-white pt-16 pb-12 border-t-4 border-gold">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                
+                <!-- Brand Info -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center gap-3.5 mb-6">
+                        <img src="assets/logo.svg" alt="Punya Ruang Realty Logo" class="w-12 h-12 object-contain" onerror="this.src='https://via.placeholder.com/48/D4AF37/222222?text=PRR'">
+                        <div>
+                            <span class="font-heading font-black text-xl text-white uppercase tracking-wider block leading-tight">PUNYA RUANG</span>
+                            <span class="font-heading font-bold text-sm text-gold uppercase tracking-widest block">REALTY</span>
+                        </div>
+                    </div>
+                    <p class="font-body text-gray-400 text-sm mb-6 max-w-md italic">
+                        "Punya Ruang, Ruang Investasi."
+                    </p>
+                    <p class="font-body text-gray-300 text-sm leading-relaxed max-w-md">
+                        Mitra terpercaya Anda dalam memetakan, menemukan, dan mengamankan properti hunian serta aset investasi berkinerja tinggi di Jabodetabek & Bandung Raya.
+                    </p>
+                </div>
+
+                <!-- Kontak PIC Aditya -->
+                <div>
+                    <h4 class="font-heading font-extrabold text-sm text-gold uppercase tracking-widest mb-6 border-b border-gray-700 pb-2">KONTAK ADITYA</h4>
+                    <ul class="space-y-4 font-body text-sm text-gray-300">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-user-check text-gold mt-1"></i>
+                            <span><strong>PIC:</strong> Aditya</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fab fa-whatsapp text-gold text-base mt-1"></i>
+                            <div>
+                                <a href="https://wa.me/6281224866614" target="_blank" class="hover:text-gold transition-colors font-semibold">081224866614</a>
+                                <span class="block text-xs text-gray-400">(Layanan 24 Jam)</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-envelope text-gold mt-1"></i>
+                            <a href="mailto:punyaruang.realty@gmail.com" class="hover:text-gold transition-colors text-xs break-all">punyaruang.realty@gmail.com</a>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fab fa-tiktok text-gold mt-1"></i>
+                            <a href="https://www.tiktok.com/@punya.ruang.realty" target="_blank" class="hover:text-gold transition-colors font-semibold">@punya.ruang.realty</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Lokasi Kantor & Jam Kerja -->
+                <div>
+                    <h4 class="font-heading font-extrabold text-sm text-gold uppercase tracking-widest mb-6 border-b border-gray-700 pb-2">LOKASI KANTOR</h4>
+                    <ul class="space-y-4 font-body text-sm text-gray-300">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-map-marker-alt text-gold mt-1"></i>
+                            <span>Komp. Nusa Hijau Cimahi,<br>Jawa Barat, Indonesia</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-clock text-gold mt-1"></i>
+                            <span><strong>Jam Operasional:</strong><br>24 Jam Non-stop</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Copyright Line -->
+            <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-body text-gray-400">
+                <p>&copy; 2026 Punya Ruang Realty. All Rights Reserved.</p>
+                <p>Designed for High Conversion Lead Generation.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6281224866614?text=Halo%20Aditya,%20saya%20ingin%20konsultasi%20mengenai%20properti%20di%20Bogor." target="_blank" class="fixed bottom-6 right-6 z-50 bg-gold text-charcoal w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform group" aria-label="Konsultasi WhatsApp">
+        <span class="absolute w-full h-full rounded-full bg-gold opacity-75 animate-ping"></span>
+        <i class="fab fa-whatsapp text-3xl relative z-10 text-charcoal"></i>
+        <span class="absolute right-16 bg-charcoal text-gold text-xs font-heading font-bold px-3 py-1.5 uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-xl border border-gold pointer-events-none">
+            KONSULTASI BOGOR 24 JAM
+        </span>
+    </a>
+
+</body>
+</html>
